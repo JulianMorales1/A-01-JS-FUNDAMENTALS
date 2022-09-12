@@ -261,10 +261,15 @@ const userInfo = {
   },
 };
 
+// const [userName, favoriteFood, favoriteThing, secondfavoriteThing] = userInfo
+
 const { name: userName, favorites: userFavorites } = { ...userInfo }
 const favoriteFood = userFavorites.needs.food
 const favoriteThing = userFavorites.wants.things[0]
 const secondfavoriteThing = userFavorites.wants.things[1]
+
+// console.log(userInfo)
+
 console.log(userName, favoriteFood, favoriteThing, secondfavoriteThing);
 
 
